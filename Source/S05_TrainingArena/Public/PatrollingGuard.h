@@ -13,10 +13,8 @@ UCLASS()
 class S05_TRAININGARENA_API APatrollingGuard : public ATP_ThirdPersonCharacter
 {
 	GENERATED_BODY()
-	
-public:
-	UPROPERTY(EditAnywhere, Category= "Patrol Route")
-	TArray<AActor*> WaypointsCPP;
+
+
 	
 	
 };

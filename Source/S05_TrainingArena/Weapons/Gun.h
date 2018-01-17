@@ -30,7 +30,9 @@ public:
 	// Sets default values for this component's properties
 	AGun();
 
-	void CreateGun();
+	/** Fires a projectile. */
+	void OnFire();
+
 
 	/** Projectile class to spawn */
 	UPROPERTY(EditDefaultsOnly, Category = Projectile)
@@ -48,20 +50,12 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
 	class UAnimMontage* FireAnimation;
 
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
 	class UAnimInstance* AnimInstance;
-
-	/** Gun muzzle's offset from the characters location */
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = Gameplay)
-	FVector GunOffset;
 
 private:
 
 
 protected:
 
-	/** Fires a projectile. */
-	void OnFire();
-		
 	
 };
